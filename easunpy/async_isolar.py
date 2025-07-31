@@ -169,11 +169,11 @@ class AsyncISolar:
                     pv1_voltage=values.get("pv1_voltage"),
                     pv1_current=values.get("pv1_current"),
                     pv1_power=values.get("pv1_power"),
-                    pv2_voltage=values.get("pv2_voltage"),
-                    pv2_current=values.get("pv2_current"),
-                    pv2_power=values.get("pv2_power"),
-                    pv_generated_today=values.get("pv_energy_today"),
-                    pv_generated_total=values.get("pv_energy_total")
+                    #pv2_voltage=values.get("pv2_voltage"),
+                    #pv2_current=values.get("pv2_current"),
+                    #pv2_power=values.get("pv2_power"),
+                    #pv_generated_today=values.get("pv_energy_today"),
+                    #pv_generated_total=values.get("pv_energy_total")
                 )
         except Exception as e:
             logger.warning(f"Failed to create PVData: {e}")

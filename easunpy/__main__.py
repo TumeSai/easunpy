@@ -94,18 +94,18 @@ def create_dashboard(inverter_data: InverterData, status_message: str | Text = "
             pv_table.add_row("PV1 Power", f"{inverter_data.pv.pv1_power}W")
         
         # Only show PV2 data if it's supported and not None
-        if inverter_data.pv.pv2_voltage is not None and inverter_data.pv.pv2_voltage > 0:
-            pv_table.add_row("PV2 Voltage", f"{inverter_data.pv.pv2_voltage:.1f}V")
-            if inverter_data.pv.pv2_current is not None:
-                pv_table.add_row("PV2 Current", f"{inverter_data.pv.pv2_current:.1f}A")
-            if inverter_data.pv.pv2_power is not None:
-                pv_table.add_row("PV2 Power", f"{inverter_data.pv.pv2_power}W")
+        #if inverter_data.pv.pv2_voltage is not None and inverter_data.pv.pv2_voltage > 0:
+        #    pv_table.add_row("PV2 Voltage", f"{inverter_data.pv.pv2_voltage:.1f}V")
+        #    if inverter_data.pv.pv2_current is not None:
+        #        pv_table.add_row("PV2 Current", f"{inverter_data.pv.pv2_current:.1f}A")
+        #    if inverter_data.pv.pv2_power is not None:
+        #        pv_table.add_row("PV2 Power", f"{inverter_data.pv.pv2_power}W")
         
         # Only show generated energy if supported and not None
-        if inverter_data.pv.pv_generated_today is not None and inverter_data.pv.pv_generated_today > 0:
-            pv_table.add_row("Generated Today", f"{inverter_data.pv.pv_generated_today:.2f}kWh")
-        if inverter_data.pv.pv_generated_total is not None and inverter_data.pv.pv_generated_total > 0:
-            pv_table.add_row("Generated Total", f"{inverter_data.pv.pv_generated_total:.2f}kWh")
+        #if inverter_data.pv.pv_generated_today is not None and inverter_data.pv.pv_generated_today > 0:
+        #    pv_table.add_row("Generated Today", f"{inverter_data.pv.pv_generated_today:.2f}kWh")
+        #if inverter_data.pv.pv_generated_total is not None and inverter_data.pv.pv_generated_total > 0:
+        #    pv_table.add_row("Generated Total", f"{inverter_data.pv.pv_generated_total:.2f}kWh")
 
     grid_output_table = Table(title="Grid & Output Status")
     grid_output_table.add_column("Parameter")
